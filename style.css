@@ -1,0 +1,78 @@
+/* This Is The Overall Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: #232024;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR { /* This is where The Options are listed */
+    background: #162a39;
+    border-right: 1px solid #444950;
+    width: 267px;
+    height: 100vh;
+    overflow-y: auto;
+    transition: 0.4s ease;
+    transition-property: left;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .nav-HEADER .sidebar-CLOSE { /* This is the Close X button */
+    background-color: red;
+    font-size: 18px;
+    padding: 2px 5px 0px 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .nav-HEADER a .sidebar-LOGO { /* NEEDS IMPROVEMENT LOGO-SIDENAV*/ 
+    margin-left: 80px;
+    height: 0px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .status-MENU #FIRSTmarginTOP { /* This is for Margin in NavOptions */
+    margin-top: 50px;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .status-MENU .menu-OPTIONS a:hover {
+    background-color: gray;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .status-MENU .menu-OPTIONS a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .status-MENU .menu-OPTIONS i {
+    margin-right: 15px;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .status-MENU .menu-OPTIONS a .dropdown {
+    background-color: blue;
+    transition: .3s ease;
+    float: right;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .status-MENU .menu-OPTIONS .sub-OPTIONS {
+    background: #262627;
+    display: none;
+}
+
+.WRAPPER .NAVIGATION .menu-SIDEBAR .active {
+    left: 0;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
